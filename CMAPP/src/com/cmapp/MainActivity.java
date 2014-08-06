@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
 		ebay_btn = (ImageButton)findViewById(R.id.imgBtn);
 		prgs_bar = (ProgressBar)findViewById(R.id.prgssBar);
 		
-		 // check for Internet status
+		 // check for Internet status Mera to kaam ho gyo cheee
         if (!isInternetPresent) {
         	
         	alertDialog.setTitle("NO Internet Connection");
