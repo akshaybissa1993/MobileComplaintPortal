@@ -7,39 +7,72 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-   
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
-   
+        android:theme="@style/AppTheme" >
         <activity
             android:name="com.cmapp.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" 
-            android:background="@drawable/main_header_selector" >
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
         <activity
             android:name="com.cmapp.Index"
             android:label="@string/title_activity_index"
-            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" 
-            android:background="@drawable/main_header_selector">
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
         </activity>
-        
         <activity
             android:name="com.cmapp.ConnectionDetector"
-            android:label="@string/title_activity_connection_detector" >
+            android:label="@string/title_activity_connection_detector" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
         </activity>
-        
+        <activity
+            android:name="com.cmapp.Information"
+            android:label="@string/title_activity_information"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.cmapp.Lodging"
+            android:label="@string/title_activity_lodging"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.cmapp.Reminder"
+            android:label="@string/title_activity_reminder"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.cmapp.Status"
+            android:label="@string/title_activity_status"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.cmapp.Feedback"
+            android:label="@string/title_activity_feedback" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        </activity>
+        <activity
+            android:name="com.cmapp.Contact"
+            android:label="@string/title_activity_contact" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        </activity>
     </application>
 
 </manifest>

@@ -27,10 +27,10 @@ public class MainActivity extends Activity {
 		cd = new ConnectionDetector(getApplicationContext());
 		isInternetPresent = cd.isConnectingToInternet(); 
 		alertDialog = new AlertDialog.Builder(getBaseContext()).create();
-		ebay_btn = (ImageButton)findViewById(R.id.imgBtn);
+	//	ebay_btn = (ImageButton)findViewById(R.id.imgBtn);
 		prgs_bar = (ProgressBar)findViewById(R.id.prgssBar);
 		
-		 // check for Internet status Mera to kaam ho gyo cheee
+		 // check for Internet status 
         if (!isInternetPresent) {
         	
         	alertDialog.setTitle("NO Internet Connection");

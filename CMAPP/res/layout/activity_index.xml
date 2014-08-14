@@ -10,14 +10,81 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Index" >
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/gen_info"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="20dp"
+        android:text="General Information"
+        android:onClick="info" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="39dp"
-        android:layout_marginTop="53dp"
-        android:src="@drawable/gen_info" />
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:src="@drawable/menu" />
+
+    <Button
+        android:id="@+id/lod_comp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_alignLeft="@+id/gen_info"
+        android:layout_below="@+id/gen_info"
+        android:onClick="lodge"
+        android:text="Lodge a Complaint" />
+
+    <Button
+        android:id="@+id/remind_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lod_comp"
+        android:layout_below="@+id/lod_comp"
+        android:layout_marginBottom="20dp"
+        android:onClick="remind"
+        android:text="Grievance Reminder" />
+
+    <Button
+        android:id="@+id/com_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/remind_us"
+        android:layout_below="@+id/remind_us"
+        android:layout_marginBottom="20dp"
+        android:onClick="status"
+        android:text="View Complaint Status" />
+
+    <Button
+        android:id="@+id/feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/com_status"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:onClick="feedback"
+        android:text="Feedbacks/Suggestions" />
+
+    <Button
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/feedback"
+        android:layout_below="@+id/feedback"
+        android:onClick="contact"
+        android:text="Contact Us" />
 
 </RelativeLayout>
